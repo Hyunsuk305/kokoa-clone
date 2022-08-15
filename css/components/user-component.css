@@ -3,20 +3,31 @@
   display: flex;
   align-items: center;
   margin-bottom: 7px;
+  justify-content: space-between;
+}
+.user-component {
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid rgba(121, 121, 121, 0.3);
 }
 
-.user-component__photo {
-  width: 60px;
-  height: 60px;
-  border-radius: 20px;
+.user-component__avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
   margin-right: 20px;
-  object-fit: cover;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-.user-component__name {
+.user-component__title{
   font-weight: 600;
-  font-size: 20px;
+  font-size: 22px;
+}
+.user-component__subtitle{
+  margin-top: 8px;
+  font-size:17px;
+  color:rgba(0,0,0,0.7); 
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .user-component__status {
@@ -27,10 +38,9 @@
 }
 
 .user-component__photo--xl {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 23px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .user-component__photo--sm {
@@ -47,7 +57,6 @@
 
 .friends-screen__channel {
   margin-top: 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
   padding-top: 10px;
   margin-bottom: 55px;
 }
@@ -55,6 +64,7 @@
 .chats-screen__friends {
   padding-top: 10px;
   margin-bottom: 55px;
+  
 }
 
 .friends-screen__channel-header {
@@ -65,13 +75,6 @@
   color: rgba(0, 0, 0, 0.2);
   font-weight: 300;
   font-size: 13px;
-}
-
-.user-component {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
 }
 
 .timeBadge {
