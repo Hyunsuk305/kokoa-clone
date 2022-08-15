@@ -27,8 +27,7 @@
 }
 
 .friends-screen__channel {
-    margin-top: 25px;
-    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-top: 25px;  
     padding-top: 15px;
 }
 
@@ -40,6 +39,27 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.profile__music {
+    padding: 5px 7px;
+  
+    width: fit-content;
+    height: fit-content;
+  
+    border: 2px solid green;
+    border-radius: 20px;
+  
+    font-size: var(--x-small-font-size);
+    font-weight: var(--light-font-weight);
+    color: rgba(0, 0, 0, 0.5);
+  
+    background: white;
+
+  }
+  .profile__music i {
+    padding: 2px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.5);
+  }
 @keyframes hideSplashScreen {
     from {
         opacity: 1;
@@ -81,3 +101,24 @@
 #splash-screen .talk {
     margin-top: 25px;
 }
+  /*user component*/
+
+  .fa-comment-alt {
+    padding-right: 20px;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .user-component__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .more-user {
+    margin-bottom: 25px;
+  }
+  .user-component__column > a > img:hover {
+    will-change: transform;
+    animation: biggerImg 0.5s linear infinite;
+  }
