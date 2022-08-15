@@ -1,54 +1,90 @@
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+  margin-bottom: 7px;
+}
+
+.user-component__photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-component__name {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.user-component__status {
+  margin-top: 8px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 300;
+}
+
+.user-component__photo--xl {
+  width: 70px;
+  height: 70px;
+  border-radius: 23px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-component__photo--sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.user-component__name--not-bold {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.friends-screen__channel {
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+  margin-bottom: 55px;
+}
+
+.chats-screen__friends {
+  padding-top: 10px;
+  margin-bottom: 55px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+  font-size: 13px;
+}
+
 .user-component {
-    justify-content: space-between;
-  }
-  
-  .user-component,
-  .user-component__column:first-child {
-    display: flex;
-    align-items: center;
-  }
-  
-  .user-component__avatar {
-    width: 70px;
-    height: 70px;
-    border-radius: 30px;
-    margin-right: 20px;
-  }
-  
-  .user-component__title {
-    font-weight: 600;
-    font-size: 22px;
-  }
-  
-  .user-component__subtitle {
-    margin-top: 8px;
-    font-size: 17px;
-    color: rgba(0, 0, 0, 0.5);
-  }
-  
-  .user-component__avatar--xl {
-    width: 80px;
-    height: 80px;
-  }
-  
-  .user-component__avatar--sm {
-    width: 60px;
-    height: 60px;
-    border-radius: 25px;
-  }
-  
-  .user-component__title--not-bold {
-    font-weight: 400;
-  }
-  
-  .user-component__column:last-child {
-    color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  
-  .user-component__time {
-    margin-bottom: 10px;
-    display: block;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.timeBadge {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+  margin-left: 30px;
+}
+
+.timeBadge > .badge {
+  margin-top: 5px;
+}
